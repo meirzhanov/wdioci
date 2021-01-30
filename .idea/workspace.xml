@@ -20,8 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8468428c-9bab-4bd4-b8b1-fb43d1e05b5c" name="Default Changelist" comment="refactor clearInput method to be available on all OS&#10;remove msedgedriver from dependencies and configuration">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.circleci/config.yml.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenoid.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +87,7 @@
       <recent name="C:\Users\Dmitriy\WebstormProjects\webdrivertest" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.report:generate">
+  <component name="RunManager" selected="npm.test:selenoid">
     <configuration name="report:generate" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -144,13 +148,24 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test:selenoid" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:selenoid" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="npm.report:generate" />
       <item itemvalue="npm.report:open" />
-      <item itemvalue="npm.test:chrome" />
       <item itemvalue="npm.test:chrome:headless" />
+      <item itemvalue="npm.report:generate" />
+      <item itemvalue="npm.test:selenoid" />
       <item itemvalue="npm.test:firefox" />
       <item itemvalue="npm.test:firefox:headless" />
+      <item itemvalue="npm.test:chrome" />
     </list>
     <recent_temporary>
       <list>
@@ -177,7 +192,10 @@
       <workItem from="1610716123244" duration="3855000" />
       <workItem from="1610767471689" duration="1266000" />
       <workItem from="1611031273862" duration="3039000" />
-      <workItem from="1611372727047" duration="4516000" />
+      <workItem from="1611372727047" duration="5730000" />
+      <workItem from="1611416296498" duration="2737000" />
+      <workItem from="1611640422695" duration="1733000" />
+      <workItem from="1611978407623" duration="2085000" />
     </task>
     <task id="LOCAL-00001" summary="refactor clearInput method to be available on all OS&#10;remove msedgedriver from dependencies and configuration">
       <created>1610394593595</created>
@@ -200,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611378185641</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactor clearInput method to be available on all OS&#10;remove msedgedriver from dependencies and configuration">
+      <created>1611378789039</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611378789039</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,30 +244,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor clearInput method to be available on all OS&#10;remove msedgedriver from dependencies and configuration" />
     <MESSAGE value="update report" />
-    <option name="LAST_COMMIT_MESSAGE" value="update report" />
+    <MESSAGE value="refactor clearInput method to be available on all OS&#10;remove msedgedriver from dependencies and configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor clearInput method to be available on all OS&#10;remove msedgedriver from dependencies and configuration" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1348" height="288" key="GridCell.Tab.0.bottom" timestamp="1611377224844">
+    <state x="465" y="191" key="FileChooserDialogImpl" timestamp="1611542441558">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1348" height="288" key="GridCell.Tab.0.bottom/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611377224844" />
-    <state width="1348" height="288" key="GridCell.Tab.0.center" timestamp="1611377224844">
+    <state x="465" y="191" key="FileChooserDialogImpl/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611542441558" />
+    <state width="1348" height="288" key="GridCell.Tab.0.bottom" timestamp="1611980112713">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1348" height="288" key="GridCell.Tab.0.center/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611377224844" />
-    <state width="1348" height="288" key="GridCell.Tab.0.left" timestamp="1611377224844">
+    <state width="1348" height="288" key="GridCell.Tab.0.bottom/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611980112713" />
+    <state width="1348" height="288" key="GridCell.Tab.0.center" timestamp="1611980112712">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1348" height="288" key="GridCell.Tab.0.left/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611377224844" />
-    <state width="1348" height="288" key="GridCell.Tab.0.right" timestamp="1611377224844">
+    <state width="1348" height="288" key="GridCell.Tab.0.center/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611980112712" />
+    <state width="1348" height="288" key="GridCell.Tab.0.left" timestamp="1611980112712">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1348" height="288" key="GridCell.Tab.0.right/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611377224844" />
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1611378212535">
+    <state width="1348" height="288" key="GridCell.Tab.0.left/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611980112712" />
+    <state width="1348" height="288" key="GridCell.Tab.0.right" timestamp="1611980112712">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611378212535" />
+    <state width="1348" height="288" key="GridCell.Tab.0.right/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611980112712" />
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1611378820471">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872/2736.161.1920.1040@0.0.1368.872" timestamp="1611378820471" />
   </component>
 </project>
